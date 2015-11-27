@@ -12,4 +12,8 @@ app.get('/', function(req, res){
 app.get('/name/:name', function(req, res){
     res.send('Bonjour + ' req.params.name + ', vous etes dans le container!');    
 });
+
+app.get('/version', function(req, res) {
+   res.send('Version 1.0'); 
+});
 app.listen(8080);
