@@ -10,6 +10,6 @@ app.get('/', function(req, res){
 });
 
 app.get('/name/:name', function(req, res){
-    res.send('Bonjour + ' req.params.name + ', vous etes dans le container');    
+    res.send('Bonjour + ' req.params.name + ', vous etes dans le container!');    
 });
 app.listen(8080);
