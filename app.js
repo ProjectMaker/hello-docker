@@ -9,4 +9,7 @@ app.get('/', function(req, res){
     res.send('Bonjour depuis le container!');
 });
 
+app.get('/name/:name', function(req, res){
+    res.send('Bonjour + ' req.params.name + ', vous etes dans le container');    
+});
 app.listen(8080);
